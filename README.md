@@ -36,7 +36,7 @@ Robust Image Error Handling: Included error handling mechanisms for image loadin
 ## Video Walkthrough 🎥
 Here's a walkthrough demonstrating the implemented features clearly:
 
-https://imgur.com/a/AFT7kF8
+https://imgur.com/a/AFT7kF8/gif
 
 ## Challenges Encountered 🛠️
 Card-Flipping Animation: Ensuring smooth 3D flip animations while maintaining readability of text required careful CSS adjustments.
