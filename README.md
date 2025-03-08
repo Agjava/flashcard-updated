@@ -1,69 +1,51 @@
-Web Development Project 2 - Computer Science Trivia Flashcards
-Submitted by: Your Name Here
+Web Development Project 2: Computer Science Trivia Flashcards
+Submitted by: Anvesh Gupta
 
-This web app: A flashcard application that tests users' knowledge of computer science concepts with interactive cards that can be flipped to reveal answers
+Project Overview
+This web application is an interactive flashcard tool designed to test and enhance users' knowledge of key computer science concepts. Users can flip cards to reveal answers, navigate between cards randomly or sequentially, and visually identify difficulty levels through color-coded badges.
 
-Time spent: 8 hours spent in total
+Total Time Spent: Approximately 8 hours
 
-Required Features
-The following required functionality is completed:
+Required Features Implemented ✅
+Card Set Information: Displays the title, a brief description, and total number of cards.
 
- The title of the card set and some information about it, such as a short description and the total number of cards are displayed
+Single Card Display: Presents one card at a time, initially showing only one side of the information pair.
 
- A single card at a time is displayed, only showing one of the components of the information pair
+Interactive Card List: Created a structured list of question-answer pairs.
 
- A list of card pairs is created
+Flip Interaction: Clicking on a card flips it to reveal the corresponding answer or question.
 
- Clicking on the card shows the corresponding component of the information pair
+Random Navigation: Implemented a "Next" button that displays a random new card each time it is clicked.
 
- Clicking the next button displays a random new card
+Optional Features Implemented 🚀
+Image Integration: Cards include images either alongside or in place of text.
 
-The following optional features are implemented:
+Visual Styling by Category: Cards have distinct visual styles (color schemes) based on their categories.
 
- Cards contains images in addition to or in place of text
+Difficulty Level Color-Coding: Cards are color-coded according to difficulty levels—easy, medium, and hard.
 
- Cards have different visual styles such as color based on their category
+Additional Features Implemented 🌟
+Difficulty Badges: Added clear visual badges indicating each card's difficulty level.
 
- Cards are color-coded based on difficulty level (easy, medium, hard)
+Previous Button Functionality: Users can navigate back to previously viewed cards.
 
-The following additional features are implemented:
+3D Flip Animation: Implemented smooth 3D card-flipping animations for enhanced user experience.
 
- Added difficulty badges to each card
+Robust Image Error Handling: Included error handling mechanisms for image loading issues, ensuring graceful degradation.
 
- Implemented previous button functionality
+Video Walkthrough 🎥
+Here's a walkthrough demonstrating the implemented features clearly:
 
- Added card flipping animation with 3D effect
+(Insert your GIF or video link here)
 
- Implemented error handling for image loading
+Challenges Encountered 🛠️
+Card-Flipping Animation: Ensuring smooth 3D flip animations while maintaining readability of text required careful CSS adjustments.
 
-Video Walkthrough
-Here's a walkthrough of implemented required features:
+Image Loading & Error Handling: Managing image loading states and gracefully handling errors involved additional state management logic in JavaScript.
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...
+Badge Positioning: Precisely positioning difficulty badges so they appeared correctly on both sides of flipped cards required meticulous CSS positioning.
 
-<!-- Recommended tools: [Kap](https://getkap.co/) for macOS [ScreenToGif](https://www.screentogif.com/) for Windows [peek](https://github.com/phw/peek) for Linux. -->
-Notes
-Describe any challenges encountered while building the app.
+License 📄
+Copyright [2025] [Anvesh Gupta]
 
-Implementing the card flipping animation while ensuring text remained readable was challenging
-
-Ensuring images loaded properly and handling loading errors required additional state management
-
-Making the difficulty badges appear correctly on both sides of the card required careful CSS positioning
-
-License
-text
-Copyright [yyyy] [name of copyright owner]
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:http://www.apache.org/licenses/LICENSE-2.0 . Unless required by applicable law or agreed to in writing, software distributed under this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for specific language governing permissions and limitations under the License.
