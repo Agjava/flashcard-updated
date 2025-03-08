@@ -1,10 +1,10 @@
-# Web Development Project 2: Computer Science Trivia Flashcards
+# Computer Science Trivia Flashcards
 Submitted by: Anvesh Gupta
 
 ## Project Overview
 This web application is an interactive flashcard tool designed to test and enhance users' knowledge of key computer science concepts. Users can flip cards to reveal answers, navigate between cards randomly or sequentially, and visually identify difficulty levels through color-coded badges.
 
-## Total Time Spent: Approximately 8 hours
+Total Time Spent: Approximately 8 hours
 
 ## Required Features Implemented ✅
 Card Set Information: Displays the title, a brief description, and total number of cards.
