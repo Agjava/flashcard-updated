@@ -69,7 +69,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: var(--mint-green);
+  background: url('https://static.vecteezy.com/system/resources/previews/008/167/404/non_2x/simply-soft-gradation-technology-background-free-vector.jpg') ;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -97,7 +97,7 @@ h1 {
 
 .card-count {
   font-size: 14px;
-  color: #666;
+  color: #14dd54;
 }
 
 .card-container {
@@ -202,4 +202,52 @@ button:hover {
   .question, .answer {
     font-size: 16px;
   }
+}
+
+/* Updated guess container styles to match the image */
+.guess-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.guess-input-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.guess-input {
+  flex: 1;
+  height: 50px;
+  padding: 0 15px;
+  border: 2px solid #0066cc;
+  border-radius: 5px 0 0 5px;
+  font-size: 18px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.submit-guess-btn {
+  height: 50px;
+  padding: 0 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.streak-count {
+  font-size: 14px;
+  color: #cbdc48;
+  margin-top: 5px;
 }

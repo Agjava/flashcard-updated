@@ -3,6 +3,8 @@ import './App.css'
 
 function App() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [streak, setStreak] = useState(0);
+const [maxStreak, setMaxStreak] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [cards] = useState([
     {
@@ -77,7 +79,37 @@ function App() {
     }
   ]);
   
+  const [userAnswer, setUserAnswer] = useState('');
+const [feedback, setFeedback] = useState(null);
+
+const handleInputChange = (e) => {
+  setUserAnswer(e.target.value);
+};
+
+const checkAnswer = () => {
+  const normalizedUserAnswer = userAnswer.trim().toLowerCase();
+  const normalizedCorrectAnswer = cards[currentCardIndex].answer.trim().toLowerCase();
   
+  if (normalizedUserAnswer === normalizedCorrectAnswer || 
+      normalizedCorrectAnswer.includes(normalizedUserAnswer)) {
+    setFeedback('correct');
+    // Update streak
+    const newStreak = streak + 1;
+    setStreak(newStreak);
+    // Update max streak if current streak is higher
+    if (newStreak > maxStreak) {
+      setMaxStreak(newStreak);
+    }
+  } else {
+    setFeedback('incorrect');
+    // Reset current streak on wrong answer
+    setStreak(0);
+  }
+  
+  setIsFlipped(true);
+};
+
+
 
   const handlePrevCard = () => {
     // Get previous card or wrap around to the end if at the beginning
@@ -106,12 +138,14 @@ function App() {
 
   return (
     <div className="app">
-      <div className="header">
-        <h1>Computer Science Trivia</h1>
-        <p>Test your knowledge of computer science with these trivia questions!</p>
-        <p className="card-count">Number of cards: {cards.length}</p>
-      </div>
       
+      <div className="header">
+  <h1>Computer Science Trivia</h1>
+  <p>Test your knowledge of computer science with these trivia questions!</p>
+  <p className="card-count">Number of cards: {cards.length}</p>
+  <p className="streak-count">Current streak: {streak} | Longest streak: {maxStreak}</p>
+</div>
+
 
       <div className="card-container">
   <div 
@@ -138,8 +172,23 @@ function App() {
       <p className="answer">{cards[currentCardIndex].answer}</p>
     </div>
   </div>
-</div>
 
+  {/* guess feedback */}
+</div>
+<div className="guess-container">
+  <div className="guess-input-wrapper">
+    <input
+      type="text"
+      placeholder="Guess the answer here:"
+      className="guess-input"
+      value={userAnswer}
+      onChange={handleInputChange}
+    />
+    <button className="submit-guess-btn" onClick={checkAnswer}>
+      Submit Guess
+    </button>
+  </div>
+</div>
 
       <div className="buttons">
       <button className="prev-btn" onClick={handlePrevCard}>←</button>
