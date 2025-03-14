@@ -7,17 +7,19 @@ This web application is an interactive flashcard tool designed to test and enhan
 Total Time Spent: Approximately 8 hours
 
 ## Required Features Implemented ✅
-Card Set Information: Displays the title, a brief description, and total number of cards.
 
-Single Card Display: Presents one card at a time, initially showing only one side of the information pair.
+The user can enter their guess in a box before seeing the flipside of the card
 
-Interactive Card List: Created a structured list of question-answer pairs.
+Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect 
 
-Flip Interaction: Clicking on a card flips it to reveal the corresponding answer or question.
+A back button displayed on the card can be used to return to the previous card in a set sequence
 
-Random Navigation: Implemented a "Next" button that displays a random new card each time it is clicked.
+A next button displayed on the card can be used to navigate to the next card in a set sequence
 
 ## Optional Features Implemented 🚀
+
+A counter displays the user’s current and longest streak of correct responses
+
 Image Integration: Cards include images either alongside or in place of text.
 
 Visual Styling by Category: Cards have distinct visual styles (color schemes) based on their categories.
@@ -36,7 +38,7 @@ Robust Image Error Handling: Included error handling mechanisms for image loadin
 ## Video Walkthrough 🎥
 Here's a walkthrough demonstrating the implemented features clearly:
 
-[https://imgur.com/a/AFT7kF8/gif](https://imgur.com/a/OTdIDKx)
+https://imgur.com/a/OTdIDKx
 
 ## Challenges Encountered 🛠️
 Card-Flipping Animation: Ensuring smooth 3D flip animations while maintaining readability of text required careful CSS adjustments.
