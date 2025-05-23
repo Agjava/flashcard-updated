@@ -6,6 +6,11 @@ This web application is an interactive flashcard tool designed to test and enhan
 
 Total Time Spent: Approximately 8 hours
 
+## Video Walkthrough 🎥
+Here's a walkthrough demonstrating the implemented features clearly:
+
+https://imgur.com/a/OTdIDKx
+
 ## Required Features Implemented ✅
 
 The user can enter their guess in a box before seeing the flipside of the card
@@ -34,11 +39,6 @@ Previous Button Functionality: Users can navigate back to previously viewed card
 3D Flip Animation: Implemented smooth 3D card-flipping animations for enhanced user experience.
 
 Robust Image Error Handling: Included error handling mechanisms for image loading issues, ensuring graceful degradation.
-
-## Video Walkthrough 🎥
-Here's a walkthrough demonstrating the implemented features clearly:
-
-https://imgur.com/a/OTdIDKx
 
 ## Challenges Encountered 🛠️
 Card-Flipping Animation: Ensuring smooth 3D flip animations while maintaining readability of text required careful CSS adjustments.
